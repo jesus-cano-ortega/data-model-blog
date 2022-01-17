@@ -1,44 +1,28 @@
-# StarWars blog database (base de datos)
+# <img src="https://github.com/jesus-cano-ortega/js-introduction-exercises/blob/main/assets/resources/img/face.png" width="45" alt="Personal Logo"> Creating Star Wats database model 
 
-**Importante**: Para realizar esta actividad necesitas hacer un `fork` de este repo en tu cuenta de **Github** y luego, abrir el *fork* en Gitpod.
+<p>
+  <a href="https://silver-zebra-yvuvil9a.ws-eu17.gitpod.io/"><img src="https://raw.githubusercontent.com/4GeeksAcademy/react-hello/master/open-in-gitpod.svg?sanitize=true" />
+  </a>
+</p>
 
-Dentro del archivo `src/models.py` encontrarás un par de clases que describen una base de datos de ejemplo.
+The objective of this project is to create an Entity Relationship Diagram, a very similar diagram to this one:
 
-Aquí hay un video de 4 minutos que explica qué es UML: [https://www.youtube.com/watch?v=UI6lqHOVHic](https://www.youtube.com/watch?v=UI6lqHOVHic)
+![Instagram Diagram](https://github.com/breatheco-de/exercise-instagram-data-modeling/blob/master/assets/example.png?raw=true)
+[Click to open diagram](https://app.quickdatabasediagrams.com/#/d/LxNXQZ)
 
-Vamos a crear el Diagrama de relación de entidad para la base de datos de un blog de StarWars, un diagrama muy similar a este:
+### Installation
 
-![Diagrama de Starwars](https://github.com/breatheco-de/exercise-starwars-data-modeling/blob/master/assets/example.png?raw=true)
-[Clic para abrir el diagrama](https://app.quickdatabasediagrams.com/#/d/LxNXQZ)
+1. Get inside the environment `$ pipenv shell`
 
-> 🔥 Puedes usar esta herramienta GRATUITA para practicar tu diagrama por primera vez: https://app.quickdatabasediagrams.com/#/d/
+2. Install all dependencies `$ pipenv install`
 
-## 💻 Instalación
+3. Generate de diagram as many times as you need `$ python src/models.py`
 
-1. Entra dentro del environment (ambiente) `$ pipenv shell`
-
-2. Instala todas las dependencias `$ pipenv install`
-
-3. Genera el diagrama tantas veces como sea necesario `$ python src/models.py`
-
-4. Abre el archivo `diagram.png` para ver tu diagrama UML!
+4. Open the file `diagram.png` to check out your UML diagram!
 
 
-## 📝Instrucciones
+### Instructions
 
-Tu trabajo es actualizar el archivo `src/models.py` con el código necesario para replicar el modelo de datos de un blog de StarWars.
+The main objective was to update the `src/models.py` file with the code needed to replicate the instagram data model showed above.
 
-El proyecto está utilizando la librería Python SQLAlchemy para generar la base de datos.
-
-- Tu proyecto debe tener una tabla `Usuario` que va a contener la información de cada uno de tus usuarios.
-- Los usuarios del blog podrán iniciar sesión y guardar sus planetas o personajes favoritos.
-- Tu base de datos debe guardar los favoritos de cada usuario del blog para su posterior revisión.
-- Tu base de datos también debe almacenar cada planeta y personaje de starwars.
-- ¿Qué otras tablas crees que necesitarás para tu aplicación?
-- ¿Qué propiedades deben ir dentro de cada tabla? Por ejemplo: El usuario tiene email, password, fecha de subscripción, nombre, apellido, etc.
-- ¿Qué relaciones hay entre las tablas? ¿Cuántos planetas puede guardar un usuario?
-   
-Nota: Recuerda que las relaciones pueden ser Uno-a-uno, Uno-a-muchos o Muchos-a-muchos.
-
-- Porfavor agrega por lo menos 4 modelos y sus respectivas relaciones.
-- General el `diagrama.png` utilizando el comando `$ python3 models.py` en la consola.
+The project is using the SQLAlchemy Python library to generate the database.
